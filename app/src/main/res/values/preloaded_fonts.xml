@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/aclonica</item>
+        <item>@font/alfa_slab_one</item>
+        <item>@font/archivo_black</item>
+        <item>@font/audiowide</item>
+        <item>@font/autour_one</item>
+        <item>@font/bungee</item>
+        <item>@font/cherry_cream_soda</item>
+        <item>@font/comfortaa_bold</item>
+        <item>@font/concert_one</item>
+        <item>@font/coustard</item>
+        <item>@font/hammersmith_one</item>
+        <item>@font/nova_round</item>
+        <item>@font/poller_one</item>
+        <item>@font/prosto_one</item>
+        <item>@font/rammetto_one</item>
+        <item>@font/sniglet_extrabold</item>
+        <item>@font/spinnaker</item>
+        <item>@font/suez_one</item>
+        <item>@font/walter_turncoat</item>
+    </array>
+</resources>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003f5c"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0.5dp"
+        android:layout_marginEnd="0.5dp"
+        android:background="@drawable/newheader"
+        android:fontFamily="@font/nova_round"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="ADD EVENT"
+        android:textColor="#fff1ac"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="89dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="115dp"
+        android:fontFamily="@font/concert_one"
+        android:gravity="center"
+        android:text="Day"
+        android:textColor="#f1bc31"
+        android:textSize="45sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="170dp"
+        android:fontFamily="@font/concert_one"
+        android:gravity="center"
+        android:text="Time"
+        android:textColor="#f1bc31"
+        android:textSize="45sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="106dp"
+        android:fontFamily="@font/concert_one"
+        android:gravity="center"
+        android:text="Event"
+        android:textColor="#f1bc31"
+        android:textSize="45sp" />
+
+    <EditText
+        android:id="@+id/event"
+        android:layout_width="341dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="9dp"
+        android:background="@drawable/textinput"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_bold"
+        android:hint="Enter Event..."
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="186dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="299dp"
+        android:background="@drawable/textinput"
+        android:ems="10"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center|center_vertical"
+        android:inputType="date"
+        android:padding="4dp"
+        android:textColor="#fdeced"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/cal"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:layout_alignBottom="@+id/date"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="-11dp"
+        android:layout_toEndOf="@+id/date"
+        android:background="@null"
+        app:srcCompat="@drawable/ic2" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="118dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="102dp"
+        android:background="@drawable/textinput"
+        android:ems="10"
+        android:fontFamily="@font/hammersmith_one"
+        android:gravity="center|center_vertical"
+        android:inputType="time"
+        android:padding="4dp"
+        android:textColor="#fdeced"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/time"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="60dp"
+        android:layout_toEndOf="@+id/time"
+        android:background="@null"
+        app:srcCompat="@drawable/ic1" />
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="287dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/newsubmit"
+        android:fontFamily="@font/aclonica"
+        android:padding="5dp"
+        android:text="Set Reminder"
+        android:textColor="#2b580c"
+        android:textSize="18sp" />
+
+</RelativeLayout>

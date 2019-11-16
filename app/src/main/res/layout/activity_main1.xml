@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe7ad"
+    tools:context=".MainActivity1">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0.5dp"
+        android:layout_marginEnd="0.5dp"
+        android:background="@drawable/header"
+        android:fontFamily="@font/rammetto_one"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="REMINDERS"
+        android:textColor="#22eaca"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/t1"
+        android:layout_marginTop="2dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/today"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/walter_turncoat"
+                android:text="     -Today"
+                android:textColor="#5d1451"
+                android:textSize="18sp" />
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/listview"
+                android:divider="#FBFBEF">
+
+            </ListView>
+
+            <TextView
+                android:id="@+id/tomorrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/walter_turncoat"
+                android:text="     -Tomorrow"
+                android:textColor="#5d1451"
+                android:textSize="18sp" />
+
+            <ListView
+                android:id="@+id/list1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/listview"
+                android:divider="#FBFBEF">
+
+            </ListView>
+
+            <TextView
+                android:id="@+id/upcoming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/walter_turncoat"
+                android:text="     -UpComing"
+                android:textColor="#5d1451"
+                android:textSize="18sp" />
+
+            <ListView
+                android:id="@+id/list2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/listview"
+                android:divider="#FBFBEF">
+
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="153dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="32dp"
+        android:focusable="true"
+        android:src="@drawable/add"
+        app:backgroundTint="#f67e7d"
+        app:fabSize="auto" />
+
+</RelativeLayout>

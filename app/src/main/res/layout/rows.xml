@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/rowss">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="11dp"
+            app:srcCompat="@drawable/ic3" />
+
+        <TextView
+            android:id="@+id/event1"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_alignParentEnd="true"
+            android:text="TextView"
+            android:textColor="#ffd369"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/event1"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="45dp"
+            android:text="TextView"
+            android:textColor="#ffd369"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</LinearLayout>
